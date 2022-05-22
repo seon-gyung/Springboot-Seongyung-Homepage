@@ -36,11 +36,5 @@ public class UserController {
     public String userinfoForm() {
         return "/user/userinfoForm";
     }
-
-        // 회원 정보 수정 페이지
-        @GetMapping("/update-form")
-        public String updateForm() {
-            return "/user/updateForm";
-        }
     
 }

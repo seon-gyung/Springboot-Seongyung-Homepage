@@ -1,9 +1,18 @@
 {{>/layout/header}}
 
-<div class="container">
-    <div>
-        <h1>회원가입 페이지</h1>
-    </div>
+<div class="container mt-5 mb-5">
+        <form action="/join" method="post">
+            <div class="form-group">
+                <input type="text" class="form-control" id="uid" placeholder="id" name="uid" required>
+            </div>
+            <div class="form-group">
+                <input type="password" class="form-control" id="pwd" placeholder="password" name="pswd" required>
+            </div>
+            <div class="form-group">
+                <input type="password" class="form-control" id="pwdc" placeholder="password check" name="pswdcheck" required>
+            </div>
+            <button type="submit" class="btn btn-info">회원가입</button>
+        </form>
 </div>
 
-{{>/layout/footer}} 
+{{>/layout/footer}}
